@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOBACHAT.UGA</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="authorization" id="loginWindow">
+            <div class="auth-block">
+                <div class="authorization__logo-wrap">
+                    <img src="./img/auth-logo.png" alt="" class="authorization__logo-img">
+                </div>
+                <h2 class="authorization-title">Авторизация</h2>
+                <p class="authorization__ask">Введите пожалуйста своё фио и ник для дальнейшей авторизации</p>
+                <div class="authorization-form">
+                    <input type="text" placeholder="Ваш Nickname" name="nickname" id="nickname" data-role="login-nickname-input">
+                    <input type="text" placeholder="Ваше имя (optional)" name="name" id="name" data-role="login-name-input">
+                    <button href="#" class="authorization__btn" data-role="login-submit"><a href="#" class="authorization__btn-link">войти</a></button>
+                    <div class="authorization-form_error" data-role="login-error"></div>
+                </div>
+            </div>
+            <div class="photo-load">
+                <span class="photo-load__close">X</span>
+                <h2 class="photo-load__title">Загрузка фото</h2>
+                <div class="photo-load__main">
+                    <div class="photo-load__image-wrap">
+                        <img src="./img/photo-camera.png" alt="" class="photo-load__image">
+                    </div>
+                    <div class="photo-load__about">
+                        <h3 class="photo-load__username">Name</h3>
+                        <p class="photo-load__status">В сети</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-properties">
+                
+            </div>
+        </section>
+                <section class="chat-section" id="mainChat">
+            <div class="users-sidebar">
+                <div class="users-sidebar__main-search">
+                    <div class="main-search__burger">
+                        <img src="./img/burger.png" alt="burger" class="burger-img">
+                    </div>
+                    <input type="text" class="main-search__input" name="userSearch" placeholder="Найти...">
+                </div>
+                <div class="main-users__user">
+                        <div class="main-users__user-photo" data-role="user-photo">
+        
+                        </div>
+                        <div class="main-users__user-name" data-role="user-name"></div>
+                    </div>
+                <div class="users-sidebar__main-users" data-role="user-list">
+                    
+                </div>
+            </div>
+            <div class="chat-section__main">
+                <div class="main__users-amount">
+                    <h4 class="users-amount__title">Чат</h4>
+                    <p class="users-amount__text"><span class="amount-counter">0</span>участников</p>
+                </div>
+                <div class="main__chat" data-role="message-list">
+                        
+                </div>
+                <div class="main__input-block">
+                    <input type="text" class="input-block__say" placeholder="Введите сообщение..." data-role="message-input">
+                    <button class="input-block__sayBtn" data-role="message-send">Отправить</button>
+                </div>
+            </div>
+            
+
+        </section>
+    </div>
+</body>
+</html>
